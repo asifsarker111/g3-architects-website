@@ -79,7 +79,7 @@ main{
     margin: 70px auto;
 }
 
-/* teams style */
+/* teams styles */
 .teams-container{
     display: flex;
     align-items: center;
@@ -88,6 +88,7 @@ main{
 .teams-img-container{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
 }
 .teams-content{
     padding-right: 70px;
@@ -191,6 +192,79 @@ main{
     width: 165px;
 }
 
+
+/* Footer Section Styling */
+.footer {
+    background: linear-gradient(to right, #00b4db, #0083b0);
+    color: white;
+    padding: 40px 0;
+    text-align: center;
+  }
+  
+  .footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .footer-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .footer-column {
+    flex: 1;
+    margin: 20px;
+  }
+  
+  .footer-column h3 {
+    margin-bottom: 15px;
+    color: #ffffff;
+  }
+  
+  .footer-column ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-column ul li {
+    margin-bottom: 10px;
+  }
+  
+  .footer-column ul li a {
+    color: #e0e0e0;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+  
+  .footer-column ul li a:hover {
+    color: #ffffff;
+  }
+  
+  .social-icons a {
+    margin: 0 10px;
+    display: inline-block;
+  }
+  
+  .social-icons img {
+    width: 30px;
+    height: 30px;
+    transition: transform 0.3s;
+  }
+  
+  .social-icons a:hover img {
+    transform: scale(1.2);
+  }
+  
+  .footer-bottom {
+    margin-top: 20px;
+    border-top: 1px solid #e0e0e0;
+    padding-top: 10px;
+    color: #e0e0e0;
+  }
+  
+
+
 /* responsive media queries */
 /* mobile devices */
 @media screen and (max-width:576px) {
@@ -227,6 +301,31 @@ main{
     .facts-card-container{
        gap: 20px;
     }
+
+
+    .footer-row {
+        flex-direction: column;
+        align-items: center;
+      }
+      
+      .footer-column {
+        margin: 10px 0;
+      }
+      
+      .footer-column h3 {
+        font-size: 18px;
+      }
+      
+      .footer-column ul li {
+        margin-bottom: 8px;
+      }
+      
+      .social-icons img {
+        width: 25px;
+        height: 25px;
+      }
+      
+
 }
 
 /* tablet or medium devices */
@@ -240,4 +339,18 @@ main{
     .sponsors-img-container {
         flex-direction: column;
     }
+
+   
+    .footer-row {
+        flex-direction: column;
+        align-items: center;
+      }
+      
+      .footer-column {
+        margin: 10px 0;
+      }
+      
+
+
+
 }
